@@ -129,7 +129,7 @@ body {
   margin-top: -2rem !important; }
 
 .u-margin-neg-top-md {
-  margin-top: -35rem !important; }
+  margin-top: -30rem !important; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -231,7 +231,6 @@ body {
 
 .service-card {
   perspective: 150rem;
-  -moz-perspective: 150rem;
   position: relative;
   height: 52rem; }
   .service-card-side {
@@ -256,10 +255,6 @@ body {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
       .service-card-side_back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-  .service-card:hover .service-card-side_front {
-    transform: rotateY(180deg); }
-  .service-card:hover .service-card-side_back {
-    transform: rotateY(0); }
   .service-card__picture {
     background-size: cover;
     height: 22rem;
@@ -309,21 +304,8 @@ body {
         padding: 1rem; }
         .service-card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
-  .service-card-cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .service-card__price-box {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 8rem; }
-  .service-card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .service-card__price-value {
-    font-size: 6rem;
-    font-weight: 100; }
+  .service-card__price {
+    font-size: 2.5rem; }
 
 .feature-box {
   background-color: #fff;
@@ -443,7 +425,7 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2* 6rem); }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(..//img/Mercedes.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(..//IMG/Mercedes.jpg);
   background-position: top;
   background-size: cover;
   clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 0);
@@ -500,7 +482,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(..//img/Tree.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(..//IMG/Tree.jpg);
   background-size: cover;
   background-position: top;
   transform: skewY(-7deg);
@@ -515,12 +497,12 @@ body {
 
 .section-contact {
   padding: 15rem 0;
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 50%), url(..//.//img/Porsche.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 50%), url(..//.//IMG/Porsche.jpg);
   background-size: cover;
   background-position: center; }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 50%), url(..//.//img/Porsche.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 50%), url(..//.//IMG/Porsche.jpg);
   background-position: center;
   background-size: 100%;
   border-radius: 5px;
