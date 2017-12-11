@@ -67,9 +67,9 @@ body {
   margin-bottom: 6rem; }
   .heading-primary--main {
     display: block;
-    font-size: 6rem;
+    font-size: 5.5rem;
     font-weight: 400;
-    letter-spacing: 3.5rem;
+    letter-spacing: 2.5rem;
     animation: moveInLeft 1.5s ease-out; }
   .heading-primary--sub {
     display: block;
@@ -94,11 +94,13 @@ body {
   transform: uppercase; }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  width: 70rem;
+  margin: 0 auto; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
-.u-center-text {
+.u-margin-center {
   text-align: center !important; }
 
 .u-left-text {
@@ -111,7 +113,7 @@ body {
   margin-bottom: 4rem !important; }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem !important; }
+  margin-bottom: 1rem !important; }
 
 .u-margin-top-xl {
   margin-top: 10rem !important; }
@@ -141,13 +143,13 @@ body {
   position: relative;
   font-size: 1.6rem;
   border: none;
-  cursor: crosshair; }
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
   background-color: #2998ff;
   color: #fff;
-  cursor: crosshair; }
+  cursor: pointer; }
   .btn:hover::after {
     transform: scaleX(1.6) scaleY(1.6);
     opacity: 0; }
@@ -193,6 +195,8 @@ body {
   padding: 4px; }
 
 .profile-card {
+  position: relative;
+  left: 10rem;
   box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.2);
   max-width: 30rem;
   font-size: 1.6rem;
@@ -201,6 +205,17 @@ body {
   text-align: center;
   overflow: hidden;
   border-radius: 5px; }
+  .profile-card_2 {
+    position: relative;
+    right: 10rem;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.2);
+    max-width: 30rem;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px; }
   .profile-card-header {
     height: 20rem; }
   .profile-card-profile {
@@ -219,7 +234,7 @@ body {
     color: #fff;
     background-color: #2998ff;
     text-align: center;
-    cursor: crosshair;
+    cursor: pointer;
     width: 100%;
     font-size: 1rem;
     text-decoration: none;
@@ -311,7 +326,7 @@ body {
   border-radius: 5px;
   height: 30rem;
   font-size: 1.5rem;
-  padding: 2.5rem;
+  padding: 3.5rem;
   text-align: center;
   transition: transform .3s; }
   .feature-box__icon {
@@ -450,6 +465,41 @@ body {
   color: #fff;
   animation: moveInLeft 1.5s ease-out; }
 
+.footer {
+  background-color: #5a5a5a;
+  padding: 10rem 0;
+  height: 80vh;
+  font-size: 1.4rem; }
+  .footer__copy-right {
+    color: #898989;
+    transition: all .3s; }
+    .footer__copy-right:hover, .footer__copy-right:active {
+      color: #fff;
+      transform: scale(1.2) ease-out; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #898989;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .3s; }
+  .footer__link:hover, .footer__link:active {
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transform: scale(1.1) ease-out; }
+
 .nav {
   letter-spacing: .2rem;
   font-size: 1rem;
@@ -466,7 +516,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   list-style-type: none;
-  cursor: crosshair;
+  cursor: pointer;
   padding: .2rem 0;
   transition: all .3s ease-out; }
 
@@ -476,23 +526,18 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -25vh; }
+  padding: 25rem 0 15rem 0;
+  margin-top: -30vh; }
 
-.section-features {
+.section-service-plan {
   padding: 20rem 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(..//IMG/Tree.jpg);
   background-size: cover;
-  background-position: top;
-  transform: skewY(-7deg);
-  margin-top: -10rem; }
-  .section-features > * {
-    transform: skewY(7deg); }
+  background-position: top; }
 
 .section-services {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
-  margin-top: -15vh; }
+  padding: 15rem 0 50rem 0; }
 
 .section-contact {
   padding: 15rem 0;
