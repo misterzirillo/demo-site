@@ -1,0 +1,22 @@
+.button {
+    text-transform: uppercase;
+    text-decoration: none;
+	background-color: $color-white;
+	color: $color-grey-text;
+	padding: 1.5rem 5rem;
+	font-size: $default-font-size;
+  border-radius: 10rem;
+	position: relative;
+	transition: all .3s ease-in;
+  
+    &:hover {
+      background-color: transparent;
+      color: $color-white;
+      border: .2rem solid $color-white;
+  }
+
+   &--animated {
+    animation: moveInBottom .5s ease-in .75s;
+    animation-fill-mode: backwards; 
+    }  
+}

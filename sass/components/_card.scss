@@ -1,0 +1,362 @@
+.profile-card {
+  position: relative;
+  left: 10rem;
+  
+  box-shadow:0 0 3rem 0 rgba($color-black, 0.2);
+  max-width: 30rem;
+  font-size: 1.6rem;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+  
+  &_2 {
+    position: relative;
+    right: 10rem;
+  
+    box-shadow:0 0 3rem 0 rgba($color-black, 0.2);
+    max-width: 30rem;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  &-header {
+    height: 20rem;
+  }
+  
+  &-profile {
+    border-radius: 100%;
+    max-width: 15rem;
+    
+  }
+  
+  &-body {
+    height: 15rem;
+  }
+  
+  &-title {
+    color: $color-grey-text;
+  }
+  
+  &-paragraph {
+    padding: 1rem;
+    font-size: $default-font-size;
+  }
+  
+  &-contact {
+    display: inline-block;
+    padding: 1.5rem;
+    color:$color-white;
+    background-color: $color-tertiary-light;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $color-white;
+    transition: transform .3s;
+    
+    &:hover {
+      transform: scale(1.3);
+    }
+    
+  }
+  
+}
+
+.service-card {
+  max-width: 80rem;
+  background: #fff;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 0 5rem -.3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5rem -.3rem rgba(0, 0, 0, 0.3);
+  margin: 0 auto 1.6%;
+  overflow: hidden;
+  position: relative;
+  font-size: $default-font-size;
+  
+  @include respond(phone) {
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    }
+  
+  &__box {
+    position: absolute;
+    background-image: url(..//..//IMG/lambo.jpg);
+    background-position: center;
+    background-size: cover;
+    float: left;
+    height: 102%;
+    width: 22%;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    
+    @include respond(phone) {
+      clip-path: none;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(..//IMG/Lambo.jpg);
+    }
+    
+  }
+  
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    font-size: 4rem;
+  }
+  
+  &__content {
+    padding: 3rem;
+    float: right;
+    width: 80%;
+    
+     @include respond(phone) {
+      width: 100%;
+      color: white;
+      }
+    
+  }
+  
+  &__headA {
+    margin: .5rem 0 0 0;
+    z-index: 99;
+    
+    @include respond(phone) {
+      heigh: 100%;
+      color: white;
+      visibility: visible;
+      z-index: auto;
+      }
+  }
+  
+  &__headB {
+    color: #9b9b9b;
+    font-size: $default-font-size;
+    font-weight: 200;
+    margin: 0 0 1rem;
+    
+    @include respond(phone) {
+      visibility: hidden;
+      }
+  }
+  
+  &__paragraph {
+    position: relative;
+    font-size: $default-font-size;
+    padding-top: 20px;
+    margin: 0 0 10px 0;
+    
+    &::after {
+      content: "";
+      background: #f8e48f;
+      height: .3rem;
+      width: 5rem;
+      position: absolute;
+      top: .5rem;
+      left: 0;
+      
+      //Responsive
+      
+      @include respond(phone) {
+        height: 0;
+        width: 0;
+      }
+    }
+  }
+}
+
+.service-card-alt {
+  max-width: 80rem;
+  background: #fff;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 0 5rem -.3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5rem -.3rem rgba(0, 0, 0, 0.3);
+  margin: 0 auto 1.6%;
+  overflow: hidden;
+  position: relative;
+  font-size: $default-font-size;
+  
+  @include respond(phone) {
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+    }
+  
+  &__box {
+    position: absolute;
+    background-image: url(..//..//IMG/Lambo2.jpg);
+    background-position: center;
+    background-size: cover;
+    float: right;
+    height: 102%;
+    width: 22%;
+    left: 80%;
+    -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    
+     @include respond(phone) {
+      clip-path: none;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(..//IMG/Lambo2.jpg);
+    }
+  }
+  
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem;
+  }
+  
+  &__content {
+    padding: 3rem;
+    float: left;
+    width: 80%;
+    
+    @include respond(phone) {
+      width: 100%;
+      color: white;
+      }
+  }
+  
+  &__headA {
+    margin: .5rem 0 0 0;
+  }
+  
+  &__headB {
+    color: #9b9b9b;
+    font-size: $default-font-size;
+    font-weight: 200;
+    margin: 0 0 1rem;
+  }
+  
+  &__paragraph {
+    position: relative;
+    font-size: $default-font-size;
+    padding-top: 20px;
+    margin: 0 0 1rem 0;
+    
+    &::after {
+      content: "";
+      background: #f8e48f;
+      height: .3rem;
+      width: 5rem;
+      position: absolute;
+      top: .5rem;
+      left: 0;
+      
+      @include respond(phone) {
+        height: 0;
+        width: 0;
+      }
+    }
+  }
+}
+
+.service-package {
+  font-size: $default-font-size;
+  max-width: 125rem;
+  border-radius: 5px;
+  margin: 5rem auto;
+  background-color: #fff;
+  box-shadow: 0 0 5rem -.3rem rgba(0, 0, 0, 0.3);
+  text-align: center;
+  
+  @include respond(phone) {
+    box-shadow: none;
+    border-radius: 0;
+    }
+  
+  &_header {
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    background-color: #c0392b;
+  font-size: $default-font-size;
+  color:#fff;
+  padding: 5rem;
+  width: 100%; 
+  position:relative;
+  top: 0;
+  z-index: 0;
+  }
+  
+  &_title {
+    margin-bottom: 1rem;
+  }
+  
+  &_box {
+    padding: 3rem;
+    display: inline;
+    color: $color-grey-text;
+    
+    @include respond(phone) {
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+    }
+    
+    &_border {
+   border-right: .1rem solid #f1f1f1; 
+    }  
+    
+  }
+  
+  &_box_sub {
+    color: #9b9b9b;
+    font-size: 1.6rem;
+    font-weight: 200;
+    display: inline;
+  
+    &::after {
+      content: "";
+      background: #c0392b;
+      height: .3rem;
+      width: 7rem;
+      display: block;
+      margin: 2rem auto 1rem;
+      
+       @include respond(phone) {
+         display: none;
+      }
+    }
+  }
+  
+  &_details {
+    margin-top: -2rem;
+    list-style-type: none;
+    text-align: center;
+    
+     @include respond(phone) {
+      margin-top: 1rem;
+      }
+
+    &_price {
+      font-size: 3.8rem;
+      color: dodgerblue;
+      font-weight: 600;
+    }
+    
+    &_list {
+        color: grey; 
+       @include respond(phone) {
+         width: 80%;
+         margin: 0 auto 1rem;
+         border-bottom: .1rem solid #f1f1f1;
+         padding-bottom: 3rem;
+      }
+    }
+  } 
+}

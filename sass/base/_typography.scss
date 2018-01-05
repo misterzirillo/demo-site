@@ -1,0 +1,122 @@
+body {
+  box-sizing: border-box;
+  color: $color-grey-text;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+  
+  @include respond(phone) {
+      margin-bottom: 2rem;
+    }
+
+  &--main {
+    display: block;
+    font-size: 5.5rem;
+    font-weight: 400;
+    letter-spacing: 2.5rem;
+    animation: moveInLeft 1.5s ease-out;
+    
+    @include respond(phone) {
+      letter-spacing: .1rem;
+      line-height: 4rem;
+      font-size: 4rem; 
+    }
+    
+    }
+
+  &--sub {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 300;
+    letter-spacing: 1.7rem;
+    animation: moveInRight 1.5s ease-out; 
+    
+    @include respond(phone) {
+      letter-spacing: .5rem;
+      font-size: 2rem;
+      font-weight: 100;
+      }
+    }
+  
+  &-contact {
+    max-width: 70rem;
+    margin-bottom: 4rem;
+    
+    @include respond(phone) {
+    margin-bottom: 0;
+    }
+  }
+  
+  &--paragraph {
+    font-size: 1.6rem;
+    color: $color-white;
+    
+     
+    @include respond(phone) {
+      min-width: 50vh;
+    }
+}
+  
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  
+   @include respond(phone) {
+      margin-top: 5rem;
+      }
+  
+  &::after {
+    content: "";
+    background: dodgerblue;
+    height: 3rem;
+    width: 10rem;
+  }
+  
+  &--sub {
+    font-size: 2.4rem; 
+    }
+  
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  transform: uppercase;
+}
+
+.heading-tertiary-2 {
+  font-size: $secondary-font-size;
+  font-weight: 700;
+  transform: uppercase;
+  
+  @include respond(phone) {
+      padding: 0 1rem; 
+    }
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  max-width: 70rem;
+  padding: 3rem;
+  margin: 0 auto 5rem;
+  
+  @include respond(phone) {
+      margin: 0 auto 1rem;
+    }
+  
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+    }
+}

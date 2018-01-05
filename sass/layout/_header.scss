@@ -1,0 +1,46 @@
+.header {
+  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(..//IMG/Mercedes-3.jpg);
+  background-position: bottom;
+  background-size: cover;
+  c-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  height: 95vh;
+  position: relative;
+  
+  @include respond(phone) {
+    c-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    height: 87vh;
+    }
+  
+  &__logo-box {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    }
+
+  &__logo {
+    height: 3.5rem;
+    animation: moveInTop 1.5s ease-out; 
+    }
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    
+    @include respond(phone) {
+      top: 45%;
+      left: 50%;
+    }
+  }
+}
+
+.header-primary-paragraph {
+  font-size: 1.6rem;
+  color: $color-white;
+  animation: moveInLeft 1.5s ease-out;
+}
