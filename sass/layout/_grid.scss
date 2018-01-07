@@ -32,10 +32,25 @@
   
   .col-1-of-3 {
     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    @include respond(phone) {
+      margin-right: 0;
+      }
+    
+    @include respond(phone) {
+      width: 100% !important;
+      }
   }
   
   .col-2-of-3 {
     width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
+    
+    @include respond(phone) {
+      margin-right: 0;
+      }
+    
+    @include respond(phone) {
+      width: 100% !important;
+      }
   }
   
   .col-1-of-4 {

@@ -1,10 +1,10 @@
 .header {
-  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(..//IMG/Mercedes-3.jpg);
-  background-position: bottom;
+  background-image: linear-gradient(rgba($color-black, .4), rgba($color-black, .4)), url(..//IMG/FerrariYellow.jpg);
+  background-position: top;
   background-size: cover;
   c-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-  height: 95vh;
+  height: 100vh;
   position: relative;
   
   @include respond(phone) {
