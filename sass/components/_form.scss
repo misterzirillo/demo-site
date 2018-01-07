@@ -9,7 +9,14 @@
 	position:relative;
     box-shadow: 0 0 5rem -.3rem rgba(0, 0, 0, 0.3);
     background-color: #F9F9F9;
+    
+    @include respond(tab-port) {
+    box-shadow: none;
+    border-radius: 0;
+      max-width: 100%; 
   }
+    
+}
   
   &_header {
     
@@ -18,18 +25,23 @@
   &_title {
     font-size: 2.4rem;
     color: $color-white;
-    background-color: dodgerblue;
-    padding: 3rem;
+    background-color: #000;
+    padding: 7rem 0 7rem 0;
     border-top-left-radius: .3rem;
     border-top-right-radius: .3rem;
   }
   
   &_paragraph {
-    max-width: 70rem;
     position: relative;
     padding-top: 2rem;
     margin: auto;
+    margin-bottom: 1rem;
     font-size: $default-font-size;
+    
+    @include respond(tab-port) {
+    width: 30rem;
+  }
+    
   }
   
   &_fieldset {
@@ -61,8 +73,8 @@
   letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: dodgerblue;
-  border-bottom: .2rem dotted dodgerblue;
+  color: red;
+  border-bottom: .2rem dotted red;
 }
 
 .disclaimer_tooltip {

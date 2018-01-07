@@ -98,7 +98,7 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .heading-primary {
       margin-bottom: 2rem; } }
   .heading-primary--main {
@@ -107,7 +107,7 @@ body {
     font-weight: 400;
     letter-spacing: 2.5rem;
     animation: moveInLeft 1.5s ease-out; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .heading-primary--main {
         letter-spacing: .1rem;
         line-height: 4rem;
@@ -118,7 +118,7 @@ body {
     font-weight: 300;
     letter-spacing: 1.7rem;
     animation: moveInRight 1.5s ease-out; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .heading-primary--sub {
         letter-spacing: .5rem;
         font-size: 2rem;
@@ -126,13 +126,13 @@ body {
   .heading-primary-contact {
     max-width: 70rem;
     margin-bottom: 4rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .heading-primary-contact {
         margin-bottom: 0; } }
   .heading-primary--paragraph {
     font-size: 1.6rem;
     color: #fff; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .heading-primary--paragraph {
         min-width: 50vh; } }
 
@@ -141,9 +141,10 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .2rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .heading-secondary {
-      margin-top: 2.5rem; } }
+      margin: 4rem auto 0;
+      max-width: 30rem; } }
   .heading-secondary::after {
     content: "";
     background: dodgerblue;
@@ -161,7 +162,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   transform: uppercase; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .heading-tertiary-2 {
       padding: 0 1rem; } }
 
@@ -170,7 +171,7 @@ body {
   max-width: 70rem;
   padding: 3rem;
   margin: 0 auto 5rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .paragraph {
       margin: 0 auto 1rem; } }
   .paragraph:not(:last-child) {
@@ -192,7 +193,7 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .u-margin-bottom-big {
       margin-bottom: 4.5rem !important; } }
 
@@ -207,7 +208,7 @@ body {
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .u-margin-top-big {
       margin-top: 2rem !important; } }
 
@@ -299,11 +300,12 @@ body {
   overflow: hidden;
   position: relative;
   font-size: 1.6rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .service-card {
       box-shadow: none;
       border-radius: 0;
-      margin: 0; } }
+      margin: 0;
+      max-width: 100%; } }
   .service-card__box {
     position: absolute;
     background-image: url(..//..//IMG/FerarriRed.jpg);
@@ -314,7 +316,7 @@ body {
     width: 20%;
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-card__box {
         clip-path: none;
         -webkit-clip-path: none;
@@ -324,15 +326,15 @@ body {
     padding: 3rem;
     float: right;
     width: 80%; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-card__content {
         width: 100%;
-        color: white;
+        color: #fff;
         position: relative; } }
   .service-card__headA {
     margin: .5rem 0 0 0;
     border-bottom: 5rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-card__headA {
         heigh: 100%;
         color: white;
@@ -343,7 +345,7 @@ body {
     font-size: 1.6rem;
     font-weight: 200;
     margin: 0 0 1rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-card__headB {
         visibility: hidden; } }
   .service-card__paragraph {
@@ -353,7 +355,7 @@ body {
     margin: 0 0 1rem 0; }
     .service-card__paragraph::after {
       content: "";
-      background: #ff6347;
+      background: red;
       height: .5rem;
       width: 5rem;
       position: absolute;
@@ -370,11 +372,12 @@ body {
   overflow: hidden;
   position: relative;
   font-size: 1.6rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .service-card_B {
       box-shadow: none;
       border-radius: 0;
-      margin: 0; } }
+      margin: 0;
+      max-width: 100%; } }
   .service-card_B__box {
     position: absolute;
     background-image: url(..//..//IMG/mercedesAMG.jpg);
@@ -385,7 +388,7 @@ body {
     width: 20%;
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-card_B__box {
         clip-path: none;
         -webkit-clip-path: none;
@@ -395,14 +398,14 @@ body {
     padding: 3rem;
     float: right;
     width: 80%; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-card_B__content {
         width: 100%;
         color: white;
         position: relative; } }
   .service-card_B__headA {
     margin: .5rem 0 0 0; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-card_B__headA {
         color: white;
         visibility: visible;
@@ -412,7 +415,7 @@ body {
     font-size: 1.6rem;
     font-weight: 200;
     margin: 0 0 1rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-card_B__headB {
         visibility: hidden; } }
   .service-card_B__paragraph {
@@ -422,7 +425,7 @@ body {
     margin: 0 0 1rem 0; }
     .service-card_B__paragraph::after {
       content: "";
-      background: #ff6347;
+      background: red;
       height: 5%;
       width: 5rem;
       position: absolute;
@@ -439,11 +442,12 @@ body {
   overflow: hidden;
   position: relative;
   font-size: 1.6rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .service-card-alt {
       box-shadow: none;
       margin: 0;
-      border-radius: 0; } }
+      border-radius: 0;
+      max-width: 100%; } }
   .service-card-alt__box {
     position: absolute;
     background-image: url(..//..//IMG/Ferrari.jpg);
@@ -455,18 +459,19 @@ body {
     left: 80%;
     -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%); }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-card-alt__box {
         clip-path: none;
         -webkit-clip-path: none;
         width: 100%;
         left: 0;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//IMG/Ferrari.jpg); } }
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//IMG/Ferrari.jpg);
+        background-position: center; } }
   .service-card-alt__content {
     padding: 3rem;
     float: left;
     width: 80%; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-card-alt__content {
         width: 100%;
         color: white;
@@ -485,7 +490,7 @@ body {
     margin: 0 0 1rem 0; }
     .service-card-alt__paragraph::after {
       content: "";
-      background: #ff6347;
+      background: red;
       height: 5%;
       width: 5rem;
       position: absolute;
@@ -502,11 +507,12 @@ body {
   overflow: hidden;
   position: relative;
   font-size: 1.6rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .service-card-alt_B {
       box-shadow: none;
       margin: 0;
-      border-radius: 0; } }
+      border-radius: 0;
+      max-width: 100%; } }
   .service-card-alt_B__box {
     position: absolute;
     background-image: url(..//..//IMG/Mercedes.jpg);
@@ -518,14 +524,15 @@ body {
     left: 80%;
     -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%); }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-card-alt_B__box {
         clip-path: none;
         -webkit-clip-path: none;
         width: 100%;
         height: 100%;
         left: 0;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//IMG/Mercedes.jpg); } }
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//IMG/Mercedes.jpg);
+        background-position: center; } }
   .service-card-alt_B__icon {
     position: absolute;
     top: 50%;
@@ -537,7 +544,7 @@ body {
     padding: 3rem;
     float: left;
     width: 80%; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-card-alt_B__content {
         width: 100%;
         color: white;
@@ -556,7 +563,7 @@ body {
     margin: 0 0 1rem 0; }
     .service-card-alt_B__paragraph::after {
       content: "";
-      background: #ff6347;
+      background: red;
       height: 5%;
       width: 5rem;
       position: absolute;
@@ -571,14 +578,20 @@ body {
   background-color: #fff;
   box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
   text-align: center; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .service-package {
       box-shadow: none;
-      border-radius: 0; } }
+      border-radius: 0;
+      max-width: 105rem; } }
+  @media (max-width: 75em) {
+    .service-package {
+      box-shadow: none;
+      border-radius: 0;
+      max-width: 105rem; } }
   .service-package_header {
     border-top-left-radius: .3rem;
     border-top-right-radius: .3rem;
-    background-color: #c0392b;
+    background-color: #000;
     font-size: 1.6rem;
     color: #fff;
     padding: 5rem;
@@ -592,7 +605,7 @@ body {
     padding: 3rem;
     display: inline;
     color: #656565; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-package_box {
         box-shadow: none;
         margin: 0;
@@ -607,20 +620,23 @@ body {
   .service-package_details {
     list-style-type: none;
     text-align: center; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service-package_details {
         margin-top: 1rem; } }
     .service-package_details_price {
       font-size: 3rem;
-      color: #203cfd;
+      color: red;
       font-weight: 600; }
     .service-package_details_list {
       color: grey; }
-      @media (max-width: 37.5em) {
+      @media (max-width: 56.25em) {
         .service-package_details_list {
           width: 80%;
           margin: 0 auto 1rem;
           padding-bottom: 1rem; } }
+  @media (max-width: 56.25em) and (max-width: 56.25em) {
+    .service-package_details_list {
+      margin: 0 auto -4rem; } }
 
 .section-contact_form {
   border-radius: .3rem;
@@ -631,21 +647,29 @@ body {
   position: relative;
   box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
   background-color: #F9F9F9; }
+  @media (max-width: 56.25em) {
+    .section-contact_form {
+      box-shadow: none;
+      border-radius: 0;
+      max-width: 100%; } }
 
 .section-contact_title {
   font-size: 2.4rem;
   color: #fff;
-  background-color: dodgerblue;
-  padding: 3rem;
+  background-color: #000;
+  padding: 7rem 0 7rem 0;
   border-top-left-radius: .3rem;
   border-top-right-radius: .3rem; }
 
 .section-contact_paragraph {
-  max-width: 70rem;
   position: relative;
   padding-top: 2rem;
   margin: auto;
+  margin-bottom: 1rem;
   font-size: 1.6rem; }
+  @media (max-width: 56.25em) {
+    .section-contact_paragraph {
+      width: 30rem; } }
 
 .section-contact_fieldset {
   width: 90%;
@@ -671,8 +695,8 @@ body {
   letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: dodgerblue;
-  border-bottom: .2rem dotted dodgerblue; }
+  color: red;
+  border-bottom: .2rem dotted red; }
 
 .disclaimer_tooltip {
   visibility: hidden;
@@ -693,10 +717,10 @@ body {
     float: left; }
     .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .row [class^='col-'] {
         margin-right: 0; } }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .row [class^='col-'] {
         width: 100% !important; } }
   .row .col-1-of-2 {
@@ -706,19 +730,22 @@ body {
     @media (max-width: 37.5em) {
       .row .col-1-of-3 {
         margin-right: 0; } }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .row .col-1-of-3 {
         width: 100% !important; } }
   .row .col-2-of-3 {
     width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .row .col-2-of-3 {
         margin-right: 0; } }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .row .col-2-of-3 {
         width: 100% !important; } }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
+    @media (max-width: 56.25em) {
+      .row .col-1-of-4 {
+        width: 100% !important; } }
   .row .col-2-of-4 {
     width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
@@ -732,11 +759,16 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   height: 100vh;
   position: relative; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .header {
       c-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
       clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
       height: 87vh; } }
+  @media (max-width: 75em) {
+    .header {
+      c-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+      height: 80vh; } }
   .header__logo-box {
     font-size: 1.6rem;
     position: absolute;
@@ -751,7 +783,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .header__text-box {
         top: 45%;
         left: 50%; } }
@@ -829,16 +861,19 @@ body {
   background-color: #f1f1f1;
   padding: 25rem 0 8rem 0;
   margin-top: -30vh; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .section-about {
-      padding: 25rem 0 4rem 0; } }
+      padding: 30rem 0 4rem 0; } }
+  @media (max-width: 75em) {
+    .section-about {
+      padding: 37rem 0 4rem 0; } }
   .section-about__profile {
     border-radius: 100%;
     max-width: 15rem;
     margin: auto 2.5rem;
     z-index: -2;
     box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3); }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .section-about__profile {
         box-shadow: none; } }
     .section-about__profile_name {
@@ -851,23 +886,27 @@ body {
   background-color: #fff;
   background-size: cover;
   background-position: top; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .section-service-plan {
       padding: 2rem 0 0rem 0; } }
+  @media (max-width: 75em) {
+    .section-service-plan {
+      padding: 37rem 0 4rem 0;
+      padding: 5rem 0 4rem 0; } }
 
 .section-services {
   background-color: #f1f1f1;
   background-size: cover;
   background-position: bottom;
   padding: 10rem 0 10rem 0; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .section-services {
-      padding: 3rem 0 1rem 0;
+      padding: 1rem 0 1rem 0;
       background-color: #fff; } }
 
 .section-contact {
   padding: 7rem 0; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .section-contact {
       padding: 0; } }
   .section-contact_paragraph {

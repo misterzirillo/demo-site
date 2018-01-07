@@ -70,7 +70,7 @@
 
 .service-card {
   max-width: 80rem;
-  background: #fff;
+  background: $color-white;
   border-radius: .3rem;
   -webkit-box-shadow: 0 0 5rem -.3rem rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5rem -.3rem rgba(0, 0, 0, 0.3);
@@ -79,10 +79,11 @@
   position: relative;
   font-size: $default-font-size;
   
-  @include respond(phone) {
+  @include respond(tab-port) {
     box-shadow: none;
     border-radius: 0;
     margin: 0;
+    max-width: 100%;
     }
   
   &__box {
@@ -96,7 +97,7 @@
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
     
-    @include respond(phone) {
+    @include respond(tab-port) {
       clip-path: none;
       -webkit-clip-path: none;
       width: 100%;
@@ -110,9 +111,9 @@
     float: right;
     width: 80%;
     
-     @include respond(phone) {
+     @include respond(tab-port) {
       width: 100%;
-      color: white;
+      color: $color-white;
       position: relative;
       }
     
@@ -122,7 +123,7 @@
     margin: .5rem 0 0 0;
     border-bottom: 5rem;
     
-    @include respond(phone) {
+    @include respond(tab-port) {
       heigh: 100%;
       color: white;
       visibility: visible;
@@ -136,7 +137,7 @@
     font-weight: 200;
     margin: 0 0 1rem;
     
-    @include respond(phone) {
+    @include respond(tab-port) {
       visibility: hidden;
       }
   }
@@ -172,10 +173,11 @@
   position: relative;
   font-size: $default-font-size;
   
-  @include respond(phone) {
+  @include respond(tab-port) {
     box-shadow: none;
     border-radius: 0;
     margin: 0;
+    max-width: 100%;
     }
   
   &__box {
@@ -189,7 +191,7 @@
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
     
-    @include respond(phone) {
+    @include respond(tab-port) {
       clip-path: none;
       -webkit-clip-path: none;
       width: 100%;
@@ -203,7 +205,7 @@
     float: right;
     width: 80%;
     
-     @include respond(phone) {
+     @include respond(tab-port) {
       width: 100%;
       color: white;
       position: relative;
@@ -214,7 +216,7 @@
   &__headA {
     margin: .5rem 0 0 0;
     
-    @include respond(phone) {
+    @include respond(tab-port) {
       color: white;
       visibility: visible;
       z-index: auto;
@@ -227,7 +229,7 @@
     font-weight: 200;
     margin: 0 0 1rem;
     
-    @include respond(phone) {
+    @include respond(tab-port) {
       visibility: hidden;
       }
   }
@@ -263,10 +265,11 @@
   position: relative;
   font-size: $default-font-size;
   
-  @include respond(phone) {
+  @include respond(tab-port) {
     box-shadow: none;
     margin: 0;
     border-radius: 0;
+    max-width: 100%;
     }
   
   &__box {
@@ -281,12 +284,13 @@
     -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
     
-     @include respond(phone) {
+     @include respond(tab-port) {
       clip-path: none;
        -webkit-clip-path: none;
       width: 100%;
       left: 0;
       background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(..//IMG/Ferrari.jpg);
+       background-position: center;
     }
   }
  
@@ -295,7 +299,7 @@
     float: left;
     width: 80%;
     
-    @include respond(phone) {
+    @include respond(tab-port) {
       width: 100%;
       color: white;
       position: relative;
@@ -342,10 +346,11 @@
   position: relative;
   font-size: $default-font-size;
   
-  @include respond(phone) {
+  @include respond(tab-port) {
     box-shadow: none;
     margin: 0;
     border-radius: 0;
+    max-width: 100%;
     }
   
   &__box {
@@ -360,13 +365,14 @@
     -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
     
-     @include respond(phone) {
+     @include respond(tab-port) {
       clip-path: none;
        -webkit-clip-path: none;
       width: 100%;
       height: 100%;
       left: 0;
       background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(..//IMG/Mercedes.jpg);
+       background-position: center;
     }
   }
   
@@ -384,7 +390,7 @@
     float: left;
     width: 80%;
     
-    @include respond(phone) {
+    @include respond(tab-port) {
       width: 100%;
       color: white;
       position: relative;
@@ -429,22 +435,29 @@
   box-shadow: 0 0 5rem -.3rem rgba(0, 0, 0, 0.3);
   text-align: center;
   
-  @include respond(phone) {
+  @include respond(tab-port) {
     box-shadow: none;
     border-radius: 0;
-    }
+    max-width: 105rem;
+  }
+  
+  @include respond(tab-land) {
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 105rem;
+  }
   
   &_header {
     border-top-left-radius: .3rem;
     border-top-right-radius: .3rem;
-    background-color: #c0392b;
-  font-size: $default-font-size;
-  color:#fff;
-  padding: 5rem;
-  width: 100%; 
-  position:relative;
-  top: 0;
-  z-index: 0;
+    background-color: #000;
+    font-size: $default-font-size;
+    color:$color-white;
+    padding: 5rem;
+    width: 100%; 
+    position:relative;
+    top: 0;
+    z-index: 0;
   }
   
   &_title {
@@ -456,7 +469,7 @@
     display: inline;
     color: $color-grey-text;
     
-    @include respond(phone) {
+    @include respond(tab-port) {
     box-shadow: none;
     margin: 0;
     border-radius: 0;
@@ -479,22 +492,26 @@
     list-style-type: none;
     text-align: center;
     
-     @include respond(phone) {
+     @include respond(tab-port) {
       margin-top: 1rem;
       }
 
     &_price {
       font-size: 3rem;
-      color: #203cfd;
+      color: red;
       font-weight: 600;
     }
     
     &_list {
         color: grey; 
-       @include respond(phone) {
+       @include respond(tab-port) {
          width: 80%;
          margin: 0 auto 1rem;
          padding-bottom: 1rem;
+         
+         @include respond(tab-port) {
+           margin: 0 auto -4rem;
+         }
       }
     }
   } 

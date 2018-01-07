@@ -13,7 +13,7 @@ body {
   backface-visibility: hidden;
   margin-bottom: 6rem;
   
-  @include respond(phone) {
+  @include respond(tab-port) {
       margin-bottom: 2rem;
     }
 
@@ -24,7 +24,7 @@ body {
     letter-spacing: 2.5rem;
     animation: moveInLeft 1.5s ease-out;
     
-    @include respond(phone) {
+    @include respond(tab-port) {
       letter-spacing: .1rem;
       line-height: 4rem;
       font-size: 4rem; 
@@ -39,7 +39,7 @@ body {
     letter-spacing: 1.7rem;
     animation: moveInRight 1.5s ease-out; 
     
-    @include respond(phone) {
+    @include respond(tab-port) {
       letter-spacing: .5rem;
       font-size: 2rem;
       font-weight: 100;
@@ -50,7 +50,7 @@ body {
     max-width: 70rem;
     margin-bottom: 4rem;
     
-    @include respond(phone) {
+    @include respond(tab-port) {
     margin-bottom: 0;
     }
   }
@@ -60,7 +60,7 @@ body {
     color: $color-white;
     
      
-    @include respond(phone) {
+    @include respond(tab-port) {
       min-width: 50vh;
     }
 }
@@ -73,8 +73,9 @@ body {
   font-weight: 700;
   letter-spacing: .2rem;
   
-   @include respond(phone) {
-      margin-top: 2.5rem;
+   @include respond(tab-port) {
+     margin: 4rem auto 0;
+     max-width: 30rem;
       }
   
   &::after {
@@ -101,7 +102,7 @@ body {
   font-weight: 700;
   transform: uppercase;
   
-  @include respond(phone) {
+  @include respond(tab-port) {
       padding: 0 1rem; 
     }
 }
@@ -112,7 +113,7 @@ body {
   padding: 3rem;
   margin: 0 auto 5rem;
   
-  @include respond(phone) {
+  @include respond(tab-port) {
       margin: 0 auto 1rem;
     }
   
