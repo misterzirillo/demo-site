@@ -68,12 +68,12 @@ components
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 52%; } }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
-    html {
-      font-size: 55%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -117,7 +117,8 @@ body {
         letter-spacing: .7rem;
         line-height: 8rem;
         font-size: 4rem;
-        width: 40rem; } }
+        width: 40rem;
+        margin-top: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2.4rem;
@@ -160,7 +161,8 @@ body {
   @media (max-width: 56.25em) {
     .heading-secondary {
       margin: 4rem auto 0;
-      max-width: 30rem; } }
+      max-width: 30rem;
+      margin-top: 4rem; } }
   .heading-secondary::after {
     content: "";
     background: dodgerblue;
