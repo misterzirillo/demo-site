@@ -18,13 +18,29 @@
 
   <body>
    
-    <nav class="nav">
-        <a href="#navigation" class="nav__list">Home</a>
+    <div class="nav">
+       <input type="checkbox" class="nav__checkbox" id="nav-toggle">
+       
+       <label for="nav-toggle" class="nav__button">Menu</label>
+       
+       <div class="nav__background">&nbsp;</div>
+       
+       <nav class="nav__navigation">
+         <ul class="nav__navigation__list">
+           <li class="nav__navigation__item"><a href="navigation" class="nav__navigation__link">Home</a></li>
+           <li class="nav__navigation__item"><a href="navigation" class="nav__navigation__link">How it works</a></li>
+           <li class="nav__navigation__item"><a href="navigation" class="nav__navigation__link">LLC Packages</a></li>
+           <li class="nav__navigation__item"><a href="navigation" class="nav__navigation__link">Contact</a></li>
+         </ul>
+       </nav>
+       
+    </div>
+      
+   <!--   <a href="#navigation" class="nav__list">Home</a>
         <a href="#about" class="nav__list">About Us</a>
         <a href="#packages" class="nav__list">How it works</a>
         <a href="#packages" class="nav__list">LLC Packages</a>
-        <a href="#packages" class="nav__list">Contact</a>
-      </nav>
+        <a href="#packages" class="nav__list">Contact</a> -->
 
     <header class="header">
            
@@ -38,7 +54,7 @@
             Considering the purchase of a luxury or recreational vehicle? Let us show you how to save thousands in Sales Tax and Registration fees by forming a Montana LLC and gaining Montana residency! We are a Montana native business specializing in creating Limited Liability Companies to establish your residency in Montana ultimately helping you save money. 
           </p>
           
-          <a href="#navigation" class="button button--animated button--text">Start your LLC</a>
+          <a href="#navigation" class="button button--animated button--text">lets get started</a>
           
         </div> 
     </header>
@@ -48,7 +64,7 @@
      <!---------- ABOUT US ---------->
      
       <section class="section-about">
-        <div class="u-margin-center u-margin-top-big">
+        <div class="u-margin-center u-margin-top-medium">
           <h2 class="heading-secondary"  id="about">
             About us
           </h2>
@@ -56,10 +72,6 @@
         
         <div class="u-margin-center u-margin-top-small u-margin-bottom-medium">
           <img src="IMG/John.jpg" class="section-about__profile u-margin-top-medium" alt="">
-          
-          <div class="section-about__profile_name">
-            John Stoppler
-          </div>
         </div>
         
         <div class="u-margin-center u-margin-top-medium">

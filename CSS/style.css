@@ -112,6 +112,10 @@ body {
         letter-spacing: .1rem;
         line-height: 4rem;
         font-size: 4rem; } }
+    @media (max-width: 75em) {
+      .heading-primary--main {
+        letter-spacing: 2rem;
+        line-height: 7rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2.4rem;
@@ -122,7 +126,14 @@ body {
       .heading-primary--sub {
         letter-spacing: .5rem;
         font-size: 2rem;
-        font-weight: 100; } }
+        font-weight: 200;
+        letter-spacing: 1.2rem; } }
+    @media (max-width: 75em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 1.7rem; } }
   .heading-primary-contact {
     max-width: 70rem;
     margin-bottom: 4rem; }
@@ -134,7 +145,10 @@ body {
     color: #fff; }
     @media (max-width: 56.25em) {
       .heading-primary--paragraph {
-        min-width: 50vh; } }
+        min-width: 30vh; } }
+    @media (max-width: 75em) {
+      .heading-primary--paragraph {
+        max-width: 70vh; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -224,23 +238,381 @@ body {
 .u-margin-neg-top-md {
   margin-top: -30rem !important; }
 
-.button {
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: #fff;
-  color: #656565;
-  padding: 1.5rem 5rem;
+.button:link, .button:visited {
+  border: 0.2rem solid #fff;
+  display: inline-block;
   font-size: 1.6rem;
-  border-radius: 10rem;
-  position: relative;
-  transition: all .3s ease-in; }
-  .button:hover {
-    background-color: transparent;
-    color: #fff;
-    border: 0.2rem solid #fff; }
-  .button--animated {
+  font-weight: 300;
+  padding: 1rem 4rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%, #fff 100%);
+  background-size: 235%;
+  transition: all .4s ease-in;
+  border-radius: 5rem; }
+  .button:link--animated, .button:visited--animated {
     animation: moveInBottom .5s ease-in .75s;
     animation-fill-mode: backwards; }
+
+.button:hover, .button:active {
+  background-position: 100%;
+  color: #000; }
+
+.service-card {
+  max-width: 80rem;
+  background: #fff;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
+  margin: 0 auto 3rem;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.6rem; }
+  @media (max-width: 56.25em) {
+    .service-card {
+      box-shadow: none;
+      border-radius: 0;
+      margin: 0;
+      max-width: 100%; } }
+  .service-card__box {
+    position: absolute;
+    background-image: linear-gradient(rgba(52, 73, 94, 0.6), rgba(52, 73, 94, 0.6)), url(..//IMG/FerarriRed.jpg);
+    background-position: center;
+    background-size: cover;
+    float: left;
+    height: 100%;
+    width: 20%;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); }
+    @media (max-width: 56.25em) {
+      .service-card__box {
+        clip-path: none;
+        -webkit-clip-path: none;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//IMG/FerarriRed.jpg); } }
+  .service-card__content {
+    padding: 3rem;
+    float: right;
+    width: 80%; }
+    @media (max-width: 56.25em) {
+      .service-card__content {
+        width: 100%;
+        color: #fff;
+        position: relative; } }
+  .service-card__headA {
+    margin: .5rem 0 0 0;
+    border-bottom: 5rem; }
+    @media (max-width: 56.25em) {
+      .service-card__headA {
+        heigh: 100%;
+        color: white;
+        visibility: visible;
+        z-index: auto; } }
+  .service-card__headB {
+    color: #9b9b9b;
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin: 0 0 1rem; }
+    @media (max-width: 56.25em) {
+      .service-card__headB {
+        visibility: hidden; } }
+  .service-card__paragraph {
+    position: relative;
+    font-size: 1.6rem;
+    padding-top: 2rem;
+    margin: 0 0 1rem 0; }
+    .service-card__paragraph::after {
+      content: "";
+      background: #f4d03f;
+      height: .4em;
+      width: 5rem;
+      position: absolute;
+      top: .5rem;
+      left: 0; }
+
+.service-card_B {
+  max-width: 80rem;
+  background: #fff;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
+  margin: 0 auto 1.6%;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.6rem; }
+  @media (max-width: 56.25em) {
+    .service-card_B {
+      box-shadow: none;
+      border-radius: 0;
+      margin: 0;
+      max-width: 100%; } }
+  .service-card_B__box {
+    position: absolute;
+    background-image: linear-gradient(rgba(52, 73, 94, 0.6), rgba(52, 73, 94, 0.6)), url(..//IMG/mercedesAMG.jpg);
+    background-position: center;
+    background-size: cover;
+    float: left;
+    height: 100%;
+    width: 20%;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); }
+    @media (max-width: 56.25em) {
+      .service-card_B__box {
+        clip-path: none;
+        -webkit-clip-path: none;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//IMG/mercedesAMG.jpg); } }
+  .service-card_B__content {
+    padding: 3rem;
+    float: right;
+    width: 80%; }
+    @media (max-width: 56.25em) {
+      .service-card_B__content {
+        width: 100%;
+        color: white;
+        position: relative; } }
+  .service-card_B__headA {
+    margin: .5rem 0 0 0; }
+    @media (max-width: 56.25em) {
+      .service-card_B__headA {
+        color: white;
+        visibility: visible;
+        z-index: auto; } }
+  .service-card_B__headB {
+    color: #9b9b9b;
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin: 0 0 1rem; }
+    @media (max-width: 56.25em) {
+      .service-card_B__headB {
+        visibility: hidden; } }
+  .service-card_B__paragraph {
+    position: relative;
+    font-size: 1.6rem;
+    padding-top: 2rem;
+    margin: 0 0 1rem 0; }
+    .service-card_B__paragraph::after {
+      content: "";
+      background: #f4d03f;
+      height: .4em;
+      width: 5rem;
+      position: absolute;
+      top: .5rem;
+      left: 0; }
+
+.service-card-alt {
+  max-width: 80rem;
+  background: #fff;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
+  margin: 0 auto 1.6%;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.6rem; }
+  @media (max-width: 56.25em) {
+    .service-card-alt {
+      box-shadow: none;
+      margin: 0;
+      border-radius: 0;
+      max-width: 100%; } }
+  .service-card-alt__box {
+    position: absolute;
+    background-image: linear-gradient(rgba(52, 73, 94, 0.6), rgba(52, 73, 94, 0.6)), url(..//IMG/Ferrari.jpg);
+    background-position: bottom;
+    background-size: cover;
+    float: right;
+    height: 100%;
+    width: 20%;
+    left: 80%;
+    -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%); }
+    @media (max-width: 56.25em) {
+      .service-card-alt__box {
+        clip-path: none;
+        -webkit-clip-path: none;
+        width: 100%;
+        left: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//IMG/Ferrari.jpg);
+        background-position: center; } }
+  .service-card-alt__content {
+    padding: 3rem;
+    float: left;
+    width: 80%; }
+    @media (max-width: 56.25em) {
+      .service-card-alt__content {
+        width: 100%;
+        color: white;
+        position: relative; } }
+  .service-card-alt__headA {
+    margin: .5rem 0 0 0; }
+  .service-card-alt__headB {
+    color: #9b9b9b;
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin: 0 0 1rem; }
+  .service-card-alt__paragraph {
+    position: relative;
+    font-size: 1.6rem;
+    padding-top: 2rem;
+    margin: 0 0 1rem 0; }
+    .service-card-alt__paragraph::after {
+      content: "";
+      background: #f4d03f;
+      height: .4em;
+      width: 5rem;
+      position: absolute;
+      top: .5rem;
+      left: 0; }
+
+.service-card-alt_B {
+  max-width: 80rem;
+  background: #fff;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
+  margin: 0 auto 1.6%;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.6rem; }
+  @media (max-width: 56.25em) {
+    .service-card-alt_B {
+      box-shadow: none;
+      margin: 0;
+      border-radius: 0;
+      max-width: 100%; } }
+  .service-card-alt_B__box {
+    position: absolute;
+    background-image: linear-gradient(rgba(52, 73, 94, 0.6), rgba(52, 73, 94, 0.6)), url(..//IMG/Bentley.jpg);
+    background-position: right 0, -18rem;
+    background-size: cover;
+    float: right;
+    height: 100%;
+    width: 20%;
+    left: 80%;
+    -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%); }
+    @media (max-width: 56.25em) {
+      .service-card-alt_B__box {
+        clip-path: none;
+        -webkit-clip-path: none;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//IMG/Bentley.jpg);
+        background-position: center; } }
+  .service-card-alt_B__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem; }
+  .service-card-alt_B__content {
+    padding: 3rem;
+    float: left;
+    width: 80%; }
+    @media (max-width: 56.25em) {
+      .service-card-alt_B__content {
+        width: 100%;
+        color: white;
+        position: relative; } }
+  .service-card-alt_B__headA {
+    margin: .5rem 0 0 0; }
+  .service-card-alt_B__headB {
+    color: #9b9b9b;
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin: 0 0 1rem; }
+  .service-card-alt_B__paragraph {
+    position: relative;
+    font-size: 1.6rem;
+    padding-top: 20px;
+    margin: 0 0 1rem 0; }
+    .service-card-alt_B__paragraph::after {
+      content: "";
+      background: #f4d03f;
+      height: .4em;
+      width: 5rem;
+      position: absolute;
+      top: .5rem;
+      left: 0; }
+
+.service-package {
+  font-size: 1.6rem;
+  max-width: 125rem;
+  border-radius: 5px;
+  margin: 5rem auto;
+  background-color: #fff;
+  box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
+  text-align: center; }
+  @media (max-width: 56.25em) {
+    .service-package {
+      box-shadow: none;
+      border-radius: 0;
+      max-width: 105rem; } }
+  @media (max-width: 75em) {
+    .service-package {
+      box-shadow: none;
+      border-radius: 0;
+      max-width: 105rem; } }
+  .service-package_header {
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    background-color: #34495e;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 5rem;
+    width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 0; }
+  .service-package_title {
+    margin-bottom: 1rem; }
+  .service-package_box {
+    padding: 3rem;
+    display: inline;
+    color: #656565; }
+    @media (max-width: 56.25em) {
+      .service-package_box {
+        box-shadow: none;
+        margin: 0;
+        border-radius: 0; } }
+    @media (max-width: 75em) {
+      .service-package_box {
+        width: 90% !important;
+        padding: 0 2rem 0; } }
+    .service-package_box_border {
+      border-right: .1rem solid #f1f1f1; }
+  .service-package_box_sub {
+    color: #9b9b9b;
+    font-size: 1.6rem;
+    font-weight: 200;
+    display: inline; }
+  .service-package_details {
+    list-style-type: none;
+    text-align: center; }
+    @media (max-width: 56.25em) {
+      .service-package_details {
+        margin-top: 1rem; } }
+    .service-package_details_price {
+      font-size: 3rem;
+      color: red;
+      font-weight: 600; }
+    .service-package_details_list {
+      color: grey; }
+      @media (max-width: 75em) {
+        .service-package_details_list {
+          padding: 0 2rem 0; } }
+      @media (max-width: 56.25em) {
+        .service-package_details_list {
+          width: 80%;
+          margin: 0 auto 1rem;
+          padding-bottom: 1rem; } }
+  @media (max-width: 56.25em) and (max-width: 56.25em) {
+    .service-package_details_list {
+      margin: 0 auto -4rem; } }
 
 .profile-card {
   position: relative;
@@ -290,354 +662,6 @@ body {
     .profile-card-contact:hover {
       transform: scale(1.3); }
 
-.service-card {
-  max-width: 80rem;
-  background: #fff;
-  border-radius: .3rem;
-  -webkit-box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
-  margin: 0 auto 1.6%;
-  overflow: hidden;
-  position: relative;
-  font-size: 1.6rem; }
-  @media (max-width: 56.25em) {
-    .service-card {
-      box-shadow: none;
-      border-radius: 0;
-      margin: 0;
-      max-width: 100%; } }
-  .service-card__box {
-    position: absolute;
-    background-image: url(..//..//IMG/FerarriRed.jpg);
-    background-position: center;
-    background-size: cover;
-    float: left;
-    height: 100%;
-    width: 20%;
-    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); }
-    @media (max-width: 56.25em) {
-      .service-card__box {
-        clip-path: none;
-        -webkit-clip-path: none;
-        width: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//IMG/FerarriRed.jpg); } }
-  .service-card__content {
-    padding: 3rem;
-    float: right;
-    width: 80%; }
-    @media (max-width: 56.25em) {
-      .service-card__content {
-        width: 100%;
-        color: #fff;
-        position: relative; } }
-  .service-card__headA {
-    margin: .5rem 0 0 0;
-    border-bottom: 5rem; }
-    @media (max-width: 56.25em) {
-      .service-card__headA {
-        heigh: 100%;
-        color: white;
-        visibility: visible;
-        z-index: auto; } }
-  .service-card__headB {
-    color: #9b9b9b;
-    font-size: 1.6rem;
-    font-weight: 200;
-    margin: 0 0 1rem; }
-    @media (max-width: 56.25em) {
-      .service-card__headB {
-        visibility: hidden; } }
-  .service-card__paragraph {
-    position: relative;
-    font-size: 1.6rem;
-    padding-top: 2rem;
-    margin: 0 0 1rem 0; }
-    .service-card__paragraph::after {
-      content: "";
-      background: red;
-      height: .5rem;
-      width: 5rem;
-      position: absolute;
-      top: .5rem;
-      left: 0; }
-
-.service-card_B {
-  max-width: 80rem;
-  background: #fff;
-  border-radius: .3rem;
-  -webkit-box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
-  margin: 0 auto 1.6%;
-  overflow: hidden;
-  position: relative;
-  font-size: 1.6rem; }
-  @media (max-width: 56.25em) {
-    .service-card_B {
-      box-shadow: none;
-      border-radius: 0;
-      margin: 0;
-      max-width: 100%; } }
-  .service-card_B__box {
-    position: absolute;
-    background-image: url(..//..//IMG/mercedesAMG.jpg);
-    background-position: center;
-    background-size: cover;
-    float: left;
-    height: 100%;
-    width: 20%;
-    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); }
-    @media (max-width: 56.25em) {
-      .service-card_B__box {
-        clip-path: none;
-        -webkit-clip-path: none;
-        width: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//IMG/mercedesAMG.jpg); } }
-  .service-card_B__content {
-    padding: 3rem;
-    float: right;
-    width: 80%; }
-    @media (max-width: 56.25em) {
-      .service-card_B__content {
-        width: 100%;
-        color: white;
-        position: relative; } }
-  .service-card_B__headA {
-    margin: .5rem 0 0 0; }
-    @media (max-width: 56.25em) {
-      .service-card_B__headA {
-        color: white;
-        visibility: visible;
-        z-index: auto; } }
-  .service-card_B__headB {
-    color: #9b9b9b;
-    font-size: 1.6rem;
-    font-weight: 200;
-    margin: 0 0 1rem; }
-    @media (max-width: 56.25em) {
-      .service-card_B__headB {
-        visibility: hidden; } }
-  .service-card_B__paragraph {
-    position: relative;
-    font-size: 1.6rem;
-    padding-top: 2rem;
-    margin: 0 0 1rem 0; }
-    .service-card_B__paragraph::after {
-      content: "";
-      background: red;
-      height: 5%;
-      width: 5rem;
-      position: absolute;
-      top: .5rem;
-      left: 0; }
-
-.service-card-alt {
-  max-width: 80rem;
-  background: #fff;
-  border-radius: .3rem;
-  -webkit-box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
-  margin: 0 auto 1.6%;
-  overflow: hidden;
-  position: relative;
-  font-size: 1.6rem; }
-  @media (max-width: 56.25em) {
-    .service-card-alt {
-      box-shadow: none;
-      margin: 0;
-      border-radius: 0;
-      max-width: 100%; } }
-  .service-card-alt__box {
-    position: absolute;
-    background-image: url(..//..//IMG/Ferrari.jpg);
-    background-position: bottom;
-    background-size: cover;
-    float: right;
-    height: 100%;
-    width: 20%;
-    left: 80%;
-    -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%); }
-    @media (max-width: 56.25em) {
-      .service-card-alt__box {
-        clip-path: none;
-        -webkit-clip-path: none;
-        width: 100%;
-        left: 0;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//IMG/Ferrari.jpg);
-        background-position: center; } }
-  .service-card-alt__content {
-    padding: 3rem;
-    float: left;
-    width: 80%; }
-    @media (max-width: 56.25em) {
-      .service-card-alt__content {
-        width: 100%;
-        color: white;
-        position: relative; } }
-  .service-card-alt__headA {
-    margin: .5rem 0 0 0; }
-  .service-card-alt__headB {
-    color: #9b9b9b;
-    font-size: 1.6rem;
-    font-weight: 200;
-    margin: 0 0 1rem; }
-  .service-card-alt__paragraph {
-    position: relative;
-    font-size: 1.6rem;
-    padding-top: 2rem;
-    margin: 0 0 1rem 0; }
-    .service-card-alt__paragraph::after {
-      content: "";
-      background: red;
-      height: 5%;
-      width: 5rem;
-      position: absolute;
-      top: .5rem;
-      left: 0; }
-
-.service-card-alt_B {
-  max-width: 80rem;
-  background: #fff;
-  border-radius: .3rem;
-  -webkit-box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
-  margin: 0 auto 1.6%;
-  overflow: hidden;
-  position: relative;
-  font-size: 1.6rem; }
-  @media (max-width: 56.25em) {
-    .service-card-alt_B {
-      box-shadow: none;
-      margin: 0;
-      border-radius: 0;
-      max-width: 100%; } }
-  .service-card-alt_B__box {
-    position: absolute;
-    background-image: url(..//..//IMG/Mercedes.jpg);
-    background-position: bottom;
-    background-size: cover;
-    float: right;
-    height: 100%;
-    width: 20%;
-    left: 80%;
-    -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%); }
-    @media (max-width: 56.25em) {
-      .service-card-alt_B__box {
-        clip-path: none;
-        -webkit-clip-path: none;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//IMG/Mercedes.jpg);
-        background-position: center; } }
-  .service-card-alt_B__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 4rem; }
-  .service-card-alt_B__content {
-    padding: 3rem;
-    float: left;
-    width: 80%; }
-    @media (max-width: 56.25em) {
-      .service-card-alt_B__content {
-        width: 100%;
-        color: white;
-        position: relative; } }
-  .service-card-alt_B__headA {
-    margin: .5rem 0 0 0; }
-  .service-card-alt_B__headB {
-    color: #9b9b9b;
-    font-size: 1.6rem;
-    font-weight: 200;
-    margin: 0 0 1rem; }
-  .service-card-alt_B__paragraph {
-    position: relative;
-    font-size: 1.6rem;
-    padding-top: 20px;
-    margin: 0 0 1rem 0; }
-    .service-card-alt_B__paragraph::after {
-      content: "";
-      background: red;
-      height: 5%;
-      width: 5rem;
-      position: absolute;
-      top: .5rem;
-      left: 0; }
-
-.service-package {
-  font-size: 1.6rem;
-  max-width: 125rem;
-  border-radius: 5px;
-  margin: 5rem auto;
-  background-color: #fff;
-  box-shadow: 0 0 5rem -0.3rem rgba(0, 0, 0, 0.3);
-  text-align: center; }
-  @media (max-width: 56.25em) {
-    .service-package {
-      box-shadow: none;
-      border-radius: 0;
-      max-width: 105rem; } }
-  @media (max-width: 75em) {
-    .service-package {
-      box-shadow: none;
-      border-radius: 0;
-      max-width: 105rem; } }
-  .service-package_header {
-    border-top-left-radius: .3rem;
-    border-top-right-radius: .3rem;
-    background-color: #000;
-    font-size: 1.6rem;
-    color: #fff;
-    padding: 5rem;
-    width: 100%;
-    position: relative;
-    top: 0;
-    z-index: 0; }
-  .service-package_title {
-    margin-bottom: 1rem; }
-  .service-package_box {
-    padding: 3rem;
-    display: inline;
-    color: #656565; }
-    @media (max-width: 56.25em) {
-      .service-package_box {
-        box-shadow: none;
-        margin: 0;
-        border-radius: 0; } }
-    .service-package_box_border {
-      border-right: .1rem solid #f1f1f1; }
-  .service-package_box_sub {
-    color: #9b9b9b;
-    font-size: 1.6rem;
-    font-weight: 200;
-    display: inline; }
-  .service-package_details {
-    list-style-type: none;
-    text-align: center; }
-    @media (max-width: 56.25em) {
-      .service-package_details {
-        margin-top: 1rem; } }
-    .service-package_details_price {
-      font-size: 3rem;
-      color: red;
-      font-weight: 600; }
-    .service-package_details_list {
-      color: grey; }
-      @media (max-width: 56.25em) {
-        .service-package_details_list {
-          width: 80%;
-          margin: 0 auto 1rem;
-          padding-bottom: 1rem; } }
-  @media (max-width: 56.25em) and (max-width: 56.25em) {
-    .service-package_details_list {
-      margin: 0 auto -4rem; } }
-
 .section-contact_form {
   border-radius: .3rem;
   font-size: 1.6rem;
@@ -656,8 +680,8 @@ body {
 .section-contact_title {
   font-size: 2.4rem;
   color: #fff;
-  background-color: #000;
-  padding: 7rem 0 7rem 0;
+  background-color: #34495e;
+  padding: 5rem 0 5rem 0;
   border-top-left-radius: .3rem;
   border-top-right-radius: .3rem; }
 
@@ -746,29 +770,32 @@ body {
     @media (max-width: 56.25em) {
       .row .col-1-of-4 {
         width: 100% !important; } }
+    @media (max-width: 75em) {
+      .row .col-1-of-4 {
+        width: 100% !important; } }
   .row .col-2-of-4 {
     width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2* 6rem); }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(..//IMG/FerrariYellow.jpg);
+  background-image: linear-gradient(rgba(52, 73, 94, 0.6), rgba(52, 73, 94, 0.6)), url(..//IMG/FerrariYellow.jpg);
   background-position: top;
   background-size: cover;
   c-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-  height: 100vh;
+  height: 87vh;
   position: relative; }
   @media (max-width: 56.25em) {
     .header {
-      c-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-      height: 87vh; } }
+      c-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+      height: 97vh; } }
   @media (max-width: 75em) {
     .header {
       c-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
       clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-      height: 80vh; } }
+      height: 87vh; } }
   .header__logo-box {
     font-size: 1.6rem;
     position: absolute;
@@ -782,7 +809,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; }
+    text-align: center;
+    color: #656565; }
     @media (max-width: 56.25em) {
       .header__text-box {
         top: 45%;
@@ -828,34 +856,82 @@ body {
     padding-right: 1rem;
     transform: scale(1.1) ease-out; }
 
-.nav {
-  width: 95%;
-  padding: 2rem 3rem;
-  text-align: center; }
-  @media (max-width: 37.5em) {
-    .nav {
-      width: 100%;
-      padding: 1rem 1.5rem; } }
-  .nav {
-    font-size: 1.2rem;
+.nav__checkbox {
+  display: none; }
+
+.nav__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  -webkit-box-shadow: 0 0 4rem -0.3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4rem -0.3rem rgba(0, 0, 0, 0.3); }
+  @media (max-width: 56.25em) {
+    .nav__button {
+      top: 1.5rem;
+      right: 1.5rem; } }
+
+.nav__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#2980b9, #34495e);
+  z-index: 1000;
+  transition: transform .8s; }
+  @media (max-width: 56.25em) {
+    .nav__background {
+      top: 2.2rem;
+      right: 2.2rem; } }
+
+.nav__navigation {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0%;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  .nav__navigation__list {
     position: absolute;
-    z-index: 1; }
-  .nav__list {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center; }
+  .nav__navigation__item {
+    margin: .5rem; }
+  .nav__navigation__link:link, .nav__navigation__link:visited {
+    border-radius: 6rem;
     display: inline-block;
-    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 3rem;
     color: #fff;
-    text-transform: uppercase;
     text-decoration: none;
-    list-style-type: none;
-    cursor: pointer;
-    padding: 1rem 2rem;
-    transition: all .3s ease-out; }
-    @media (max-width: 37.5em) {
-      .nav__list {
-        padding: .5rem 1rem; } }
-  .nav__list:hover {
-    transform: scaleX(1.1);
-    color: #656565; }
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%, #fff 100%);
+    background-size: 220%;
+    transition: all .8s; }
+  .nav__navigation__link:hover, .nav__navigation__link:active {
+    background-position: 100%;
+    color: #2980b9; }
+
+.nav__checkbox:checked ~ .nav__background {
+  transform: scale(60); }
+
+.nav__checkbox:checked ~ .nav__navigation {
+  opacity: 1;
+  width: 100%; }
 
 .section-about {
   background-color: #f1f1f1;
@@ -863,10 +939,13 @@ body {
   margin-top: -30vh; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 30rem 0 4rem 0; } }
+      padding: 37rem 0 4rem 0; } }
   @media (max-width: 75em) {
     .section-about {
-      padding: 37rem 0 4rem 0; } }
+      padding: 20rem 0 4rem 0; } }
+  @media (min-width: 112.5em) {
+    .section-about {
+      padding: 25rem 0 4rem 0; } }
   .section-about__profile {
     border-radius: 100%;
     max-width: 15rem;
@@ -892,7 +971,7 @@ body {
   @media (max-width: 75em) {
     .section-service-plan {
       padding: 37rem 0 4rem 0;
-      padding: 5rem 0 4rem 0; } }
+      padding: 2rem 0 4rem 0; } }
 
 .section-services {
   background-color: #f1f1f1;

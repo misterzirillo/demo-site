@@ -30,6 +30,11 @@ body {
       font-size: 4rem; 
     }
     
+    @include respond(tab-land) {
+      letter-spacing: 2rem;
+      line-height: 7rem;
+    }
+    
     }
 
   &--sub {
@@ -42,8 +47,17 @@ body {
     @include respond(tab-port) {
       letter-spacing: .5rem;
       font-size: 2rem;
-      font-weight: 100;
+      font-weight: 200;
+      letter-spacing: 1.2rem;
       }
+    
+    @include respond(tab-land) {
+      letter-spacing: .5rem;
+      font-size: 2rem;
+      font-weight: 300;
+      letter-spacing: 1.7rem;
+      }
+    
     }
   
   &-contact {
@@ -61,7 +75,11 @@ body {
     
      
     @include respond(tab-port) {
-      min-width: 50vh;
+      min-width: 30vh;
+    }
+    
+    @include respond(tab-land) {
+      max-width: 70vh;
     }
 }
   
@@ -73,8 +91,7 @@ body {
   font-weight: 700;
   letter-spacing: .2rem;
   
-   @include respond(tab-port) {
-     margin: 4rem auto 0;
+   @include respond(tab-port) {margin: 4rem auto 0;
      max-width: 30rem;
       }
   
