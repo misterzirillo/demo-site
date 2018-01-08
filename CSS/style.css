@@ -107,15 +107,17 @@ body {
     font-weight: 400;
     letter-spacing: 2.5rem;
     animation: moveInLeft 1.5s ease-out; }
-    @media (max-width: 56.25em) {
-      .heading-primary--main {
-        letter-spacing: .1rem;
-        line-height: 4rem;
-        font-size: 4rem; } }
     @media (max-width: 75em) {
       .heading-primary--main {
-        letter-spacing: 2rem;
-        line-height: 7rem; } }
+        letter-spacing: .7rem;
+        line-height: 7rem;
+        width: 40rem; } }
+    @media (max-width: 56.25em) {
+      .heading-primary--main {
+        letter-spacing: .7rem;
+        line-height: 8rem;
+        font-size: 4rem;
+        width: 40rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2.4rem;
@@ -598,7 +600,7 @@ body {
         margin-top: 1rem; } }
     .service-package_details_price {
       font-size: 3rem;
-      color: red;
+      color: #f4d03f;
       font-weight: 600; }
     .service-package_details_list {
       color: grey; }
@@ -869,11 +871,13 @@ body {
   border-radius: 50%;
   z-index: 2000;
   -webkit-box-shadow: 0 0 4rem -0.3rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 4rem -0.3rem rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 0 4rem -0.3rem rgba(0, 0, 0, 0.3);
+  text-align: center;
+  cursor: pointer; }
   @media (max-width: 56.25em) {
     .nav__button {
-      top: 1.5rem;
-      right: 1.5rem; } }
+      top: 2.5rem;
+      right: 2.5rem; } }
 
 .nav__background {
   height: 6rem;
@@ -887,8 +891,8 @@ body {
   transition: transform .8s; }
   @media (max-width: 56.25em) {
     .nav__background {
-      top: 2.2rem;
-      right: 2.2rem; } }
+      top: 2.7rem;
+      right: 2.7rem; } }
 
 .nav__navigation {
   height: 100vh;
@@ -932,6 +936,35 @@ body {
 .nav__checkbox:checked ~ .nav__navigation {
   opacity: 1;
   width: 100%; }
+
+.nav__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .nav__icon, .nav__icon::before, .nav__icon::after {
+    width: 3rem;
+    height: 3px;
+    background-color: #34495e;
+    display: inline-block; }
+  .nav__icon::before, .nav__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .3s; }
+  .nav__icon::before {
+    top: -.8rem; }
+  .nav__icon::after {
+    top: .8rem; }
+
+.nav__checkbox:checked + .nav__button .nav__icon {
+  background: transparent; }
+
+.nav__checkbox:checked + .nav__button .nav__icon::before {
+  transform: rotate(135deg);
+  top: 0; }
+
+.nav__checkbox:checked + .nav__button .nav__icon::after {
+  transform: rotate(-135deg);
+  top: 0; }
 
 .section-about {
   background-color: #f1f1f1;
