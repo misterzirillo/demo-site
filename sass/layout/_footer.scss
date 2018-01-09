@@ -1,7 +1,7 @@
 .footer {
   background-color:#5a5a5a;
   padding: 10rem 0;
-  height: 45vh;
+  height: 100%;
   font-size: 1.4rem;
   
   &__header {
@@ -34,7 +34,6 @@
   &__link {
     &:link,
     &:visited {
-      text-align: left;
       color: #898989;
       text-decoration: none;
       text-transform: uppercase;
