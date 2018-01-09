@@ -1,29 +1,22 @@
 .footer {
   background-color:#5a5a5a;
   padding: 10rem 0;
-  height: 30vh;
+  height: 45vh;
   font-size: 1.4rem;
   
+  &__header {
+    color: $color-white;
+  }
+  
   &__copy-right {
-    color: #898989;
+    color: $color-white;
     transition: all .3s;
     
-    &:hover,
-    &:active {
-      color: $color-white;
-      transform: scale(1.2) ease-out;
-    }
-    
   }
   
-  &__logo-box {
-    text-align: center;
-    margin-bottom: 8rem;
-  }
-  
-  &__logo {
-    width: 15rem;
-    height: auto;
+  &__icon {
+    padding-right: 1rem;
+    margin: 1rem 0;
   }
   
   &__list {
@@ -31,7 +24,7 @@
   }
   
   &__item {
-    display: inline-block;
+    display: block;
     
     &:not(:last-child) {
       margin-right: 1.5rem;
@@ -41,21 +34,13 @@
   &__link {
     &:link,
     &:visited {
+      text-align: left;
       color: #898989;
       text-decoration: none;
       text-transform: uppercase;
-      display: inline-block;
+      display: block;
       transition: all .3s;
     }
-    
-    &:hover,
-    &:active {
-      color: $color-white;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      transform: scale(1.1) ease-out;
-    }
-    
   }
   
 }
