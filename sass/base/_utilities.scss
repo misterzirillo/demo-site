@@ -1,0 +1,63 @@
+.u-margin-middle {
+  max-width: 80rem  !important;
+  margin: auto  !important;
+}
+
+.u-margin-middle-2 {
+  max-width: 70rem  !important; 
+  margin: auto  !important;
+}
+
+.u-margin-center {
+  text-align: center !important;
+}
+
+.u-left-text {
+  text-align: right !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+  
+   
+    @include respond(tab-port) {
+      margin-bottom: 4.5rem !important;
+    }
+  
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem !important;
+}
+
+.u-margin-top-xl {
+  margin-top: 10rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+  
+  @include respond(tab-port) {
+      margin-top: 2rem !important;
+    }
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem !important;
+}
+
+.u-margin-top-small {
+  margin-top: 2rem !important;
+}
+
+.u-margin-neg-top-sm {
+  margin-top: -2rem !important;
+}
+
+.u-margin-neg-top-md {
+  margin-top: -30rem !important;
+}

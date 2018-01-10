@@ -1,0 +1,84 @@
+.section-contact {
+  
+  &_form {
+    border-radius: .3rem;
+    font-size: $default-font-size;
+    max-width:60rem;
+    max-height: 400rem;
+	margin:0 auto;
+	position:relative;
+    box-shadow: 0 0 5rem -.3rem rgba(0, 0, 0, 0.3);
+    background-color: #F9F9F9;
+    
+    @include respond(tab-port) {
+    box-shadow: none;
+    border-radius: 0;
+      max-width: 100%; 
+  }
+    
+}
+  
+  &_header {
+    
+  }
+  
+  &_title {
+    font-size: 2.4rem;
+    color: $color-white;
+    background-color: $color-primary;
+    padding: 5rem 0 5rem 0;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+  }
+  
+  &_paragraph {
+    position: relative;
+    padding-top: 2rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: $default-font-size;
+    
+    @include respond(tab-port) {
+    width: 30rem;
+  }
+    
+  }
+  
+  &_fieldset {
+    width: 90%;
+    border: medium none !important;
+	margin: 3rem;
+  }
+  
+  &_input {
+    font-size: $default-font-size;
+    width: 80%;
+    padding: 1rem;
+    border: none;
+  }
+  
+  &_btn {
+    background-color: white;
+    width: 40%;
+    padding: 1rem;
+    margin: 1rem 0 2rem;
+    font-size: $default-font-size;
+  }
+  
+}
+
+/* Tooltip container */
+.disclaimer_link {
+  font-size: $default-font-size;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: red;
+  border-bottom: .2rem dotted red;
+}
+
+.disclaimer_tooltip {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+}

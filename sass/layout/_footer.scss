@@ -1,0 +1,45 @@
+.footer {
+  background-color:#5a5a5a;
+  padding: 10rem 0;
+  height: 100%;
+  font-size: 1.4rem;
+  
+  &__header {
+    color: $color-white;
+  }
+  
+  &__copy-right {
+    color: $color-white;
+    transition: all .3s;
+    
+  }
+  
+  &__icon {
+    padding-right: 1rem;
+    margin: 1rem 0;
+  }
+  
+  &__list {
+    list-style: none;
+  }
+  
+  &__item {
+    display: block;
+    
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+  
+  &__link {
+    &:link,
+    &:visited {
+      color: #898989;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      transition: all .3s;
+    }
+  }
+  
+}

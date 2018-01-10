@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="CSS/icon-font.css">
+  <link rel="stylesheet" href="CSS/foundation-icons.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
@@ -17,13 +18,25 @@
 
   <body>
    
-    <nav class="nav">
-        <a href="#navigation" class="nav__list">Home</a>
-        <a href="#about" class="nav__list">About Us</a>
-        <a href="#packages" class="nav__list">How it works</a>
-        <a href="#packages" class="nav__list">LLC Packages</a>
-        <a href="#packages" class="nav__list">Contact</a>
-      </nav>
+    <div class="nav">
+       <input type="checkbox" class="nav__checkbox" id="nav-toggle">
+       
+       <label for="nav-toggle" class="nav__button">
+         <span class="nav__icon">&nbsp;</span>
+       </label>
+       
+       <div class="nav__background">&nbsp;</div>
+       
+       <nav class="nav__navigation">
+         <ul class="nav__navigation__list">
+           <li class="nav__navigation__item"><a href="navigation" class="nav__navigation__link">Home</a></li>
+           <li class="nav__navigation__item"><a href="navigation" class="nav__navigation__link">How it works</a></li>
+           <li class="nav__navigation__item"><a href="navigation" class="nav__navigation__link">LLC Packages</a></li>
+           <li class="nav__navigation__item"><a href="navigation" class="nav__navigation__link">Contact</a></li>
+         </ul>
+       </nav>
+       
+    </div>
 
     <header class="header">
            
@@ -33,10 +46,11 @@
           <span class="heading-primary--sub"> 
           Services</span>
           </h1>
-          <p class="header-primary-paragraph u-margin-bottom-big">
+          <p class="heading-primary--paragraph u-margin-bottom-big">
             Considering the purchase of a luxury or recreational vehicle? Let us show you how to save thousands in Sales Tax and Registration fees by forming a Montana LLC and gaining Montana residency! We are a Montana native business specializing in creating Limited Liability Companies to establish your residency in Montana ultimately helping you save money. 
           </p>
-          <a href="#navigation" class="button button--animated button--text">Start your LLC</a>
+          
+          <a href="#navigation" class="button button--animated button--text">lets get started</a>
           
         </div> 
     </header>
@@ -46,21 +60,15 @@
      <!---------- ABOUT US ---------->
      
       <section class="section-about">
-        <div class="u-margin-center u-margin-top-big">
-        <h2 class="heading-secondary" id="about">
+        <div class="u-margin-center u-margin-top-medium">
+          <h2 class="heading-secondary u-magin-top-medium"  id="about">
             About us
           </h2>
         </div>
         
         <div class="u-margin-center u-margin-top-small u-margin-bottom-medium">
           <img src="IMG/John.jpg" class="section-about__profile u-margin-top-medium" alt="">
-          
-          <div class="section-about__profile_name">
-            John Stoppler
-          </div>
         </div>
-        
-        <div class="row">
         
         <div class="u-margin-center u-margin-top-medium">
             <h2 class="heading-tertiary-2 u-margin-center u-margin-bottom-small">You're going to love working with Montana LLC Services</h2>
@@ -115,8 +123,7 @@
                
             </div>
           </div> -->
-          
-        </div>
+     
       </section>
       
       <!---------- LLC SERVICE PLAN ---------->
@@ -126,65 +133,61 @@
         <h2 class="heading-secondary" id="about">
             How it works
           </h2>
+          <p class="paragraph">
+            Forming a Montana LLC to purchase, hold and sell any personal property that has a title is fast, easy and legal. You simply provide us the desired name of the LLC, the names of the members and we handle the rest for you. You and your members do not need to reside in Montana, your LLC is the legal resident of the state. Your LLC may purchase, or transfer the ownership, of any motor vehicle (or any other personal property with a title) to your newly formed LLC. You may operate that vehicle in any state if you comply with the laws of the state where the vehicle is located. 
+          </p>
         </div>
        
         <div class="row">
-        <div class="service-card u-margin-bottom-medium">
-          <div class="service-card__box">
-            <i class="service-card__icon icon-basic-lightbulb"></i>
+          <div class="service-card">
+            <div class="service-card__box">
+              <!-- <i class="service-card__icon icon-basic-lightbulb"></i> -->
+            </div>
+            <div class="service-card__content"> 
+              <h1 class="service-card__headA" >Plan</h1>
+              <!-- <h2 class="service-card__headB heading-tertiary-2">Planning your LLC</h2> -->
+              <p class="service-card__paragraph">
+                Pick the name for your new Montana LLC, and decide who the members will be. Provide that information to us and we handle the rest. 
+              </p>
+            </div>
           </div>
-          <div class="service-card__content"> 
-            <h1>Plan</h1>
-            <h2 class="service-card__headB heading-tertiary-2">Planning your LLC</h2>
-            <p class="service-card__paragraph">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint animi odit dolorem vitae eligendi? Corrupti laboriosam harum
-              nihil fuga assumenda, possimus vero eum quis maiores minima doloribus temporibus sapiente odit!
-            </p>
+
+          <div class="service-card-alt">
+            <div class="service-card-alt__box">
+              <!-- <i class="service-card-alt__icon icon-basic-pencil-ruler"></i> -->
+            </div>
+            <div class="service-card-alt__content"> 
+              <h1 class="service-card-alt__headA">Create</h1>
+              <!-- <h2 class="service-card-alt__headB heading-tertiary-2">Creating your LLC</h2> -->
+              <p class="service-card-alt__paragraph">
+                Once we receive your desired name and the names of the members we will check to determine if the name is available and file all necessary paperwork with the Montana Secretary of State utilizing our address as your LLC’s principle address and listing us as the registered agent. We will forward your LLC paperwork to you as soon as we receive it from the Secretary of State.
+              </p>
+            </div>
           </div>
-        </div>
-        
-        <div class="service-card-alt u-margin-bottom-medium">
-          <div class="service-card-alt__box">
-            <i class="service-card-alt__icon icon-basic-pencil-ruler"></i>
+
+          <div class="service-card_B">
+            <div class="service-card_B__box">
+            </div>
+            <div class="service-card_B__content"> 
+              <h1 class="service-card_B__headA">Operate</h1>
+              <p class="service-card_B__paragraph">
+                With your newly formed Montana LLC you can purchase a new vehicle or transfer ownership of an existing vehicle to the new LLC thus avoiding potential sales taxes and costly registration fees. We will handle the registration of your vehicle with the Montana DMV and forward your registration and plates to you. 
+              </p>
+            </div>
           </div>
-          <div class="service-card-alt__content"> 
-            <h1 class="service-card-alt__headA">Create</h1>
-            <h2 class="service-card-alt__headB heading-tertiary-2">Creating your LLC</h2>
-            <p class="service-card-alt__paragraph">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint animi odit dolorem vitae eligendi? Corrupti laboriosam harum
-              nihil fuga assumenda, possimus vero eum quis maiores minima doloribus temporibus sapiente odit!
-            </p>
+
+          <div class="service-card-alt_B">
+            <div class="service-card-alt_B__box">
+              <!-- <i class="service-card-alt__icon icon-basic-settings"></i> -->
+            </div>
+            <div class="service-card-alt_B__content"> 
+              <h1 class="service-card-alt_B__headA">Manage</h1>
+              <!-- <h2 class="service-card-alt__headB heading-tertiary-2">Managing your LLC</h2> -->
+              <p class="service-card-alt_B__paragraph">
+                We can handle all subsequent yearly filings along with the registration renewals for you and we can forward any mail received on your LLC’s behalf. In addition, we can assist in winding down your LLC and help filing any necessary paperwork to potentially avoid local use taxes. All you need to do is enjoy your new vehicle. 
+              </p>
+            </div>
           </div>
-        </div>
-        
-        <div class="service-card u-margin-bottom-medium">
-          <div class="service-card__box">
-            <i class="service-card__icon icon-basic-gear"></i>
-          </div>
-          <div class="service-card__content"> 
-            <h1 class="service-card__headA">Operate</h1>
-            <h2 class="service-card__headB heading-tertiary-2">Operating your LLC</h2>
-            <p class="service-card__paragraph">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint animi odit dolorem vitae eligendi? Corrupti laboriosam harum
-              nihil fuga assumenda, possimus vero eum quis maiores minima doloribus temporibus sapiente odit!
-            </p>
-          </div>
-        </div>
-        
-        
-        <div class="service-card-alt u-margin-bottom-medium">
-          <div class="service-card-alt__box">
-            <i class="service-card-alt__icon icon-basic-settings"></i>
-          </div>
-          <div class="service-card-alt__content"> 
-            <h1 class="service-card-alt__headA">Manage</h1>
-            <h2 class="service-card-alt__headB heading-tertiary-2">Managing your LLC</h2>
-            <p class="service-card-alt__paragraph">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint animi odit dolorem vitae eligendi? Corrupti laboriosam harum
-              nihil fuga assumenda, possimus vero eum quis maiores minima doloribus temporibus sapiente odit!
-            </p>
-          </div>
-        </div>
       </div> 
         
       </section>
@@ -192,9 +195,9 @@
         <!---------- LLC PACKAGE ---------->
       
       <section class="section-services">
-      
-      <div class="u-margin-center u-margin-top-small u-margin-bottom-big">
-        <h2 class="heading-secondary" id="about">
+
+      <div class="u-margin-center u-margin-top-small">
+          <h2 class="heading-secondary"  id="about">
             Choose your LLC package
           </h2>
         </div>
@@ -202,65 +205,56 @@
       <div class="service-package">
           <div class="service-package_header u-margin-bottom-small">
             <h1 class="service-package_title">Service Package Options</h1>
-            <p class="service-package_paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro inventore qui repellat reprehenderit amet accusamus delectus sapiente aliquam voluptatibus ratione facilis iste consequatur impedit, quasi mollitia neque veniam ipsa officiis.
+            <p class="service-package_paragraph">Montana LLC Services offers several options to serve your needs. Below are just a few of our service packages. 
+
             </p>
           </div>
         <div class="row">
 
-      <div class="col-1-of-3 u-margin-bottom-small">
-            <div class="service-package_box">
-              <span class="icon"></span>
-              <h2 class="service-package_box_title">Package 1</h2>
-              <h3 class="service-package_box_sub">Lorem ipsum</h3>
+      <div class="col-1-of-4 u-margin-bottom-small">
+        <div class="service-package_box"><span class="icon"></span><h2 class="service-package_box_title">Package 1</h2><h3 class="service-package_box_sub">LLC Formation</h3>
           <div>
             <ul class="service-package_details">
-                  <li>
-                    <span class="service-package_details_price">$899</span>
-                  </li>
-                <li class="service-package_details_list">Detail</li>
-                <li class="service-package_details_list">Detail</li>
-                <li class="service-package_details_list">Detail</li>
+                <li><span class="service-package_details_price">$550</span></li>
+                <li class="service-package_details_list">Includes completion and filing of paperwork with the Montana Secretary of State. Serve as the registered agent for your newly formed business during the first year of filing. Capability to act as the manager of your LLC during the first year including mail forwarding. </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="col-1-of-3">
-            <div class="service-package_box">
-              <span class="icon"></span>
-              <h2 class="service-package_box_title">Package 2</h2>
-              <h3 class="service-package_box_sub">Lorem ipsum</h3>
+      <div class="col-1-of-4">
+        <div class="service-package_box"><span class="icon"></span><h2 class="service-package_box_title">Package 2</h2><h3 class="service-package_box_sub">Vehical Registration</h3>
           <div>
             <ul class="service-package_details">
-                  <li>
-                    <span class="service-package_details_price">$899</span>
-                  </li>
-                <li class="service-package_details_list">Detail</li>
-                <li class="service-package_details_list">Detail</li>
-                <li class="service-package_details_list">Detail</li>
+                <li><span class="service-package_details_price">$400</span></li>
+              <li class="service-package_details_list">Completion of all paperwork required to license your vehicle in Montana (does not include actual registration fees) and the forwarding of license plates, and all legal documents to you as soon as possible.</li>
             </ul>
           </div>
         </div>
       </div>
 
-
-       <div class="col-1-of-3">
-            <div class="service-package_box">
-              <span class="icon"></span>
-              <h2 class="service-package_box_title">Package 3</h2>
-              <h3 class="service-package_box_sub">Lorem ipsum</h3>
+       <div class="col-1-of-4">
+        <div class="service-package_box"><span class="icon"></span><h2 class="service-package_box_title">Package 3</h2><h3 class="service-package_box_sub">Annual Requirements</h3>
           <div>
             <ul class="service-package_details">
-                  <li>
-                    <span class="service-package_details_price">$899</span>
-                  </li>
-                <li class="service-package_details_list">Detail</li>
-                <li class="service-package_details_list">Detail</li>
-                <li class="service-package_details_list">Detail</li>
+                <li><span class="service-package_details_price">$175</span></li>
+                <li class="service-package_details_list">Includes the filing of the Annual report with the State of Montana along with the current calendar year Registered Agent Service.</li>
             </ul>
           </div>
         </div>
       </div>
+      
+      <div class="col-1-of-4">
+        <div class="service-package_box"><span class="icon"></span><h2 class="service-package_box_title">Package 4</h2><h3 class="service-package_box_sub">Other Services  (Per Hour) </h3>
+          <div>
+            <ul class="service-package_details">
+                <li><span class="service-package_details_price">$100</span></li>
+                <li class="service-package_details_list">Services such as Preparation of an Operating Agreement (may be required for financing), Mailing Service, EIN acquisition, or Document Retrieval. </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
     </div>
     </div>
       
@@ -268,12 +262,12 @@
       
     <section class="section-contact u-margin-center">
        <div class="section-contact_header u-margin-center u-margin-bottom-small">
-          <h2 class="heading-secondary heading-contact u-margin-bottom-medium">
+          <h2 class="heading-secondary heading-contact">
             Lets start your LLC
           </h2>
-          
-        <p class="section-contact_paragraph u-margin-center u-margin-bottom-bigs">Montana LLC Services are not attorneys and cannot provide legal advice. The information contained in this site is
-          for general guidance on matters of interest only.
+
+          <p class="section-contact_paragraph u-margin-bottom-bigs">Simply complete the information below and we will reach out to you to begin the process or you can contact us as well. It is a fast, simple process. Simply complete the information below or feel free to reach out directly to us. 
+
           </p>
           
           <div class="disclaimer">
@@ -377,9 +371,7 @@
       
       $formall.on('change', 'input, textarea, select', function (e) {
         var $input = $(e.currentTarget);
-      
         var $mirror = $resultForm.find('[data-for="' + $input.attr('name') + '"]');
-       
         $mirror.text($input.val());
       });
     
@@ -394,7 +386,7 @@
     });
   </script>
     
-    <footer class="footer u-margin-top-small">
+    <footer class="footer u-margin-top-small u-margin-center">
     
      <!---------- LOGO ----------> 
      <!-- <div class="footer__logo-box">
@@ -402,24 +394,31 @@
       </div> -->
       
       <div class="row">
-        <div class="col-1-of-2">
+        <div class="col-1-of-3">
           <div class="footer__navigation">
             <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#" class="footer__link">Company</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Contact us</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Privacy policy</a>
-            </li>
+             <li><h2 class="footer__header">Location</h2></li>
+              <li class="footer__item"><a href="#" class="footer__link"><h4 class="footer__header">Office Address</h4>701 Upper Georgetown Lake Road Philipsburg, MT 59858</a></li>
+              <li class="footer__item"><a href="#" class="footer__link"><h4 class="footer__header">Mailing Address</h4> P.O. Box 1468 Anaconda, MT 59711</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-1-of-2">
-  
+        
+        <div class="col-1-of-3">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+             <li><h2 class="footer__header">Contact</h2></li>
+              <li class="footer__item"><a href="#" class="footer__link"><h4 class="footer__header">Telephone</h4>(406) xxx-xxxx</a></li>
+              <li class="footer__item"><a href="#" class="footer__link"><h4 class="footer__header">Toll Free</h4>(866) xxx-xxxx</a></li>
+              <li class="footer__item"><a href="#" class="footer__link"><h4 class="footer__header">Fax</h4>(406) xxx-xxxx</a></li>
+            </ul>
+          </div>
         </div>
+        
+        <div class="col-1-of-3">
+          
+        </div>
+        
       </div>
       
     </footer>
